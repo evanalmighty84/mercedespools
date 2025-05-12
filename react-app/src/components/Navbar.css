@@ -1,0 +1,203 @@
+/* Navbar.css */
+
+/* Main Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #000000,#cb6ce6, #5ce1e6);
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    font-size: 14px;
+    line-height: 1.42857143;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.nav-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar-left {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-logo {
+    position: relative;
+    height: 125px; /* Fixed height */
+    overflow: visible;
+}
+
+.navbar-logo svg {
+    height: 100%;
+    overflow: visible;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.navbar.custom-navbar.navbar-fixed-top {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Navbar Header (Logo + Toggle Button) */
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.navbar-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+    display: block;
+    height: 2px;
+    width: 22px;
+    margin: 4px 0;
+}
+
+/* Logo */
+.logo img {
+    max-width: 200px;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+/* Navbar Collapse (Menu Links) */
+.navbar-collapse {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* No display: flex here globally! */
+}
+
+/* Nav Links Layout */
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.navbar-nav li {
+    color:white;
+    margin: 0 10px;
+}
+
+.navbar-nav li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    color: #ccc;
+}
+
+/* Align Right Items (like Facebook Icon) */
+.navbar-nav.navbar-right {
+    margin-left: auto;
+}
+/* Fixed top-right logo */
+.corner-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: auto;
+    z-index: 10;
+}
+
+.corner-logo svg {
+    height: 100%;
+    width: auto;
+}
+
+/* Logo inside mobile menu */
+.mobile-logo-wrapper {
+    display: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .corner-logo {
+        display: none;
+    }
+
+    .mobile-logo-wrapper {
+        display: block;
+    }
+}
+
+
+/* ============================= */
+/* Mobile Responsive Styles Here */
+/* ============================= */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-collapse.in {
+        display: flex !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav li {
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    .navbar-nav.navbar-right {
+        margin-left: 0;
+    }
+}
