@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './YoutubeSection.css';
 
-const API_KEY = 'AIzaSyATKVegvSx1ev5QXWy8JaSWWKnospZG5Q0';
+const API_KEY = 'AIzaSyCqn6RNAw2DIFutWciOnbeIf5sROf6c1EA';
 const VIDEO_IDS = [
     '8GLf8AU2liU',
     'CirIPNdL0Vc',

@@ -5,8 +5,8 @@ const pool = require('../../../db/db');
 dotenv.config();
 
 const client = twilio(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
-const businessPhone = '+19729799004';
-const businessEmail = 'eclipsepoolservice@gmail.com';
+const businessPhone = '+14693663556';
+const businessEmail = 'Info@mercedespools.com';
 const userId = 670;
 
 exports.createEmail = async (req, res) => {
@@ -40,14 +40,14 @@ exports.createEmail = async (req, res) => {
 
         // ✅ Text customer
         await client.messages.create({
-            body: `Hi ${name}, thanks for contacting Clearly #1 Pool Service! We’ll reach out shortly.`,
+            body: `Hi ${name}, thanks for contacting Mercedes Pool Service! We’ll reach out shortly.`,
             messagingServiceSid: process.env.TWILIO_MESSAGING_SID,
             to: sanitizedPhone
         });
 
         // ✅ Text business
         await client.messages.create({
-            body: `📬 Hi Sandy, Your CRM is updated with a New contact from ${name}\n📞 ${sanitizedPhone}\n📧 ${email}\n🏠 ${address}\n📩 ${message}`,
+            body: `📬 Hi David, Your CRM is updated with a New contact from ${name}\n📞 ${sanitizedPhone}\n📧 ${email}\n🏠 ${address}\n📩 ${message}`,
             messagingServiceSid: process.env.TWILIO_MESSAGING_SID,
             to: businessPhone
         });
