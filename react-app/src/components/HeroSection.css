@@ -1,0 +1,97 @@
+#home {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-layer video {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+}
+
+/* Portrait phone (narrow + tall) */
+@media screen and (max-width: 500px) and (min-height: 700px) {
+    #home {
+
+    }
+
+    .video-layer video {
+        transform: scale(1.25); /* widen view to show full content */
+        transform-origin: center;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 430px) and (min-height: 900px) {
+    #home {
+       min-height:300px!important;
+        margin-top:.1px;
+    }
+
+    .video-layer video {
+        transform: none;
+        width: 100%;
+
+        object-fit: contain; /* or 'fill' if black bars are not acceptable */
+        object-position: center;
+    }
+
+    .home-info {
+        padding: 1rem;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+    }
+}
+
+
+/* General mobile */
+@media (max-width: 768px) {
+    #home {
+min-height:600px;
+    }
+
+    .home-info {
+        text-align: center;
+        padding: 1.5rem;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.content-layer {
+    position: relative;
+    z-index: 1;
+}
+
+.home-info {
+    color: #fff;
+}

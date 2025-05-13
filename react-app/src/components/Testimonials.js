@@ -1,38 +1,37 @@
 import React from 'react';
+import reviewer1 from '../images/reviewer2.png';
+import reviewer2 from '../images/reviewer3.png';
+import reviewer3 from '../images/reviewer1.png';
 
 const testimonials = [
     {
-        name: "Melissa R.",
-        image: "https://randomuser.me/api/portraits/women/44.jpg",
-        review: "Eclipse Pool Service has kept our pool sparkling clean all year! Their team is reliable and always on time. Highly recommended for regular maintenance!",
+        name: "Di Nest",
+        image: reviewer1,
+        review: "I use Mercedes Pools for all my pool needs, including resurfacing and new coping and patio. I'm so in love with it! I cannot be more grateful and thankful for this company!",
     },
     {
-        name: "Jason K.",
-        image: "https://randomuser.me/api/portraits/men/46.jpg",
-        review: "I've used several pool companies before, but Eclipse Pool Service is the best! They caught a small leak early and saved me from a huge repair later. Excellent service!",
+        name: "Carson Everett",
+        image: reviewer2,
+        review: "My pool was in real need of updates, and Mercedes was able to work it into their schedule and achieve great results. Support small business and help the economy grow!",
     },
     {
-        name: "Alyssa P.",
-        image: "https://randomuser.me/api/portraits/women/65.jpg",
-        review: "The weekly pool maintenance plan is worth every penny! Our water has never looked better. Friendly staff, and they always leave everything spotless.",
+        name: "Shelly Morgan",
+        image: reviewer3,
+        review: "I’ve been with Mercedes Pools for over 20 years. They’re knowledgeable, affordable, and true experts. They treat each client like family. I'm truly blessed to have found them!",
     },
 ];
-
-
 
 const Testimonials = () => {
     return (
         <div style={{
-            backgroundColor: '#f8f9fa',
+            background: 'linear-gradient(to right, #434343, #000000)',
             padding: '40px 20px',
-            borderRadius: '10px',
             width: '100%',
-            maxWidth: '1200px',
             margin: 'auto'
         }}>
             <h2 style={{
                 textAlign: 'center',
-                color: '#333',
+                color: '#ff6a00',
                 fontFamily: 'Arial, sans-serif'
             }}>What Our Customers Say</h2>
 
@@ -44,15 +43,16 @@ const Testimonials = () => {
                             border: '1px solid #ddd',
                             borderRadius: '10px',
                             padding: '15px',
-                            boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)'
+                            boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+                            textAlign: 'center'
                         }}>
                             <img
                                 src={t.image}
-                                alt={`Reviewer ${i + 1}`}
-                                style={{ borderRadius: '50%', marginBottom: '10px' }}
+                                alt={`Photo of ${t.name}`}
+                                style={{ borderRadius: '50%', width: '80px', height: '80px', objectFit: 'cover', marginBottom: '10px' }}
                             />
-                            <h4 style={{ margin: 0, color: '#007bff' }}>{t.name}</h4>
-                            <p style={{ fontSize: '14px', color: '#666' }}>{t.review}</p>
+                            <h4 style={{ margin: 0, color: '#ff6a00' }}>{t.name}</h4>
+                            <p style={{ fontSize: '14px', color: '#666', marginTop: '10px' }}>{t.review}</p>
                             <div style={{ color: '#FFD700', fontSize: '18px' }}>★★★★★</div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const Testimonials = () => {
             </div>
 
             <p style={{ textAlign: 'center', marginTop: '20px', color: '#555', fontSize: '14px' }}>
-                <a href="https://g.co/kgs/9aikPZK" style={{ color: '#007bff', textDecoration: 'none' }}>
+                <a href="https://g.co/kgs/9aikPZK" target="_blank" rel="noopener noreferrer" style={{ color: '#ff6a00', textDecoration: 'none' }}>
                     Read More Reviews on Google
                 </a>
             </p>

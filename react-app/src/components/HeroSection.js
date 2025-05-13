@@ -1,73 +1,80 @@
-import React from 'react';
-import Movie from '../images/NewEclipseMovie.mp4'
-import Eclipse from '../images/newllogo'
+import React, { useEffect, useRef, useState } from 'react';
+import './HeroSection.css';
 
 const HeroSection = () => {
+    const forwardVideoRef = useRef(null);
+    const reverseVideoRef = useRef(null);
+    const [isReversed, setIsReversed] = useState(false);
+
+
+    const forwardVideoURL =
+        'https://res.cloudinary.com/duz4vhtcn/video/upload/v1747084945/vidu-video-2772905594124313_online-video-cutter.com_1_g7mfmf.mp4';
+
+
+    const reversedVideoURL =
+        'https://res.cloudinary.com/duz4vhtcn/video/upload/e_reverse/v1747084945/vidu-video-2772905594124313_online-video-cutter.com_1_g7mfmf.mp4';
+
+    useEffect(() => {
+        const forward = forwardVideoRef.current;
+        const reverse = reverseVideoRef.current;
+
+        const playForward = () => {
+            reverse.style.opacity = 0;
+            forward.style.opacity = 1;
+            forward.currentTime = 0;
+            forward.play();
+            setIsReversed(false);
+        };
+
+        const playReverse = () => {
+            forward.style.opacity = 0;
+            reverse.style.opacity = 1;
+            reverse.currentTime = 0;
+            reverse.play();
+            setIsReversed(true);
+        };
+
+        forward.addEventListener('ended', playReverse);
+        reverse.addEventListener('ended', playForward);
+
+        playForward();
+
+        return () => {
+            forward.removeEventListener('ended', playReverse);
+            reverse.removeEventListener('ended', playForward);
+        };
+    }, []);
+
     return (
-        <section
-            id="home"
-            data-stellar-background-ratio="0.5"
-            style={{
-                position: 'relative',
-                overflow: 'hidden',
-            }}
-        >
-            {/* Full background video */}
-            <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    objectPosition: '50% 50%',
-                    zIndex: -1,
-                }}
-                poster="https://res.cloudinary.com/duz4vhtcn/image/upload/v1746493567/sandy5_gyj52w.jpg"
-                src="https://res.cloudinary.com/duz4vhtcn/video/upload/v1746490843/vidu-video-2763219046132686_utz67d.mp4"
-            />
+        <section id="home">
+            <div className="video-layer">
+                <video ref={forwardVideoRef} muted playsInline>
+                    <source src={forwardVideoURL} type="video/mp4" />
+                </video>
+                <video ref={reverseVideoRef} muted playsInline>
+                    <source src={reversedVideoURL} type="video/mp4" />
+                </video>
+            </div>
 
-            {/* Optional overlay for readability */}
-            <div
-                className="overlay"
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    background: 'rgba(0,0,0,0.3)', // adjust if needed
-                    zIndex: 0,
-                }}
-            ></div>
+            <div className=""></div>
 
-            <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+            <div className="container content-layer">
                 <div className="row">
-                    <div className="col-md-6 col-sm-12">
-                        <div className="home-info">
-                            <h1 style={{ fontStyle: 'italic', fontFamily: 'ltc-bodoni-175' }}>
-                                "Making your pool Clear and Bright 🌞."
-                            </h1>
-                            <a href="tel:+19729799004" className="btn section-btn smoothScroll">Call us Now</a>
-                            <span>
-            <a href="tel:+19729799004" style={{ textDecoration: 'none', color: 'inherit' }}>
-              CALL US (972) 979-9004
-            </a>
-            <small>For any inquiry</small>
-          </span>
-                        </div>
+                    <div className="col-md-6 col-sm-12 home-info">
+                        <h1 style={{ fontStyle: 'italic', fontFamily: 'ltc-bodoni-175' }}>
+                            "the premier swimming pool supplier and service firm in North Texas."
+                        </h1>
+                        <a href="tel:+14693663556" className="btn section-btn smoothScroll">Call us Now</a>
+                        <span>
+                            <a href="tel:+14693663556" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                CALL US (469) 366-3556
+                            </a>
+                            <small>For any inquiry</small>
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
     );
 };
 

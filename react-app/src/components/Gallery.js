@@ -1,8 +1,10 @@
 import React from 'react';
-import Image1 from "../images/Picture10.jpg"
-import Image2 from "../images/7thpicture.jpeg"
-import Image3 from "../images/8thpicture.jpg"
-import Image4 from "../images/9thpicture.webp"
+import Image1 from "../images/pictures/123-1_2.JPEG"
+import Image2 from "../images/pictures/123-1_5.JPEG"
+import Image3 from "../images/pictures/123-1_3.JPEG"
+import Image4 from "../images/pictures/123-1_1.JPEG"
+import Logo from "../images/mercedespoollogo.jpg"
+import MercedesPoolLogo from "../images/mercedespoollogo.jpg";
 
 const galleryItems = [
     {
@@ -34,8 +36,10 @@ const Gallery = () => {
                 <div className="row">
                     <div className="col-md-12 col-sm-12">
                         <div className="section-title">
-                            <h2>Project Gallery</h2>
-                            <span className="line-bar">...</span>
+                            <img src={MercedesPoolLogo} alt="Mercedes Pools Logo" style={{ height: '40px'}} />
+
+                            <h2 style={{color:'black',fontSize:'xxx-large',paddingTop:'30px'}}>Project Gallery</h2>
+
                         </div>
                     </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css'
+import MercedesPoolLogo from "../images/mercedespoollogo.jpg";
 const services = [
     {
         title: 'Full-Service Pool Cleaning',
@@ -7,7 +8,7 @@ const services = [
         image: 'https://res.cloudinary.com/duz4vhtcn/video/upload/c_crop,h_1638,w_992/v1746491477/vidu-video-2763226135542961_rbj0tt.mp4',
         poster: 'https://res.cloudinary.com/duz4vhtcn/image/upload/c_crop,h_4924,w_2451/v1746492595/sandy3_hl1pcu.jpg',
         type: 'video',
-        gradient: ' linear-gradient(90deg, #000000,#cb6ce6, #5ce1e6)'
+        gradient: '  linear-gradient(90deg, #000000, #ff6a00, #ffb347)'
     },
     {
         title: 'Green to Clean Recovery',
@@ -15,7 +16,7 @@ const services = [
         image: 'https://res.cloudinary.com/duz4vhtcn/video/upload/v1746492850/vidu-video-2763222859741367_w8c01q.mp4',
         poster: 'https://res.cloudinary.com/duz4vhtcn/image/upload/v1746492216/sandy2_nvqcrc.jpg',
         type: 'video',
-        gradient: 'linear-gradient(90deg, #000000,#cb6ce6, #5ce1e6)'
+        gradient: '  linear-gradient(90deg, #000000, #ff6a00, #ffb347)'
     },
     {
         title: 'Weekly Maintenance Plans',
@@ -23,7 +24,7 @@ const services = [
         image: 'https://res.cloudinary.com/duz4vhtcn/video/upload/c_crop,h_1187,w_963/v1746490843/vidu-video-2763219046132686_utz67d.mp4',
         poster: 'https://res.cloudinary.com/duz4vhtcn/image/upload/c_scale,h_4284,w_3274/v1746494500/sandy5_ysw1yh.jpg',
         type: 'video',
-        gradient: 'linear-gradient(90deg, #000000,#cb6ce6, #5ce1e6)'
+        gradient: '  linear-gradient(90deg, #000000, #ff6a00, #ffb347)'
     },
     {
         title: 'Pool Equipment Inspections',
@@ -31,20 +32,26 @@ const services = [
         image: 'https://res.cloudinary.com/duz4vhtcn/video/upload/c_crop,h_806,w_617/v1745876829/5thfinalvideo_hagsg9.mp4',
         poster: 'https://res.cloudinary.com/duz4vhtcn/image/upload//c_scale,h_4284,w_3274/v1745884630/060BC3A2-AC59-48C1-8639-0CF1CFEA15B5_augwxi.jpg',
         type: 'video',
-        gradient: ' linear-gradient(90deg, #000000,#cb6ce6, #5ce1e6)'
-    },
+        gradient: '  linear-gradient(90deg, #000000, #ff6a00, #ffb347)'
+
+
+},
 ];
 
 
 const ServicesSection = () => {
     return (
+
         <section style={{ backgroundColor: 'white' }} id="services" data-stellar-background-ratio="0.5">
+
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-sm-12">
                         <div className="section-title">
-                            <h2>Our Pool Services</h2>
-                            <span className="line-bar">...</span>
+                            <img src={MercedesPoolLogo} alt="Mercedes Pools Logo" style={{ height: '40px'}} />
+
+                            <h2 style={{color:'black',fontSize:'xxx-large',paddingTop:'30px'}}>Our Pool Services</h2>
+
                         </div>
                     </div>
 
@@ -80,6 +87,7 @@ const ServicesSection = () => {
                                             width: '100%',
                                             height: '100%',
                                             objectFit: 'cover',
+                                           margin:'5px',
                                         }}
                                     />
                                 </div>
@@ -95,6 +103,7 @@ const ServicesSection = () => {
                                         flexDirection: 'column',
                                         justifyContent: 'center',
                                         color: 'white',
+                                        margin:'5px'
                                     }}
                                 >
                                     <h3 style={{ color: '#00c0ff' }}>{s.title}</h3>

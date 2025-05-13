@@ -1,0 +1,12 @@
+.footer-nav-button {
+    all: unset; /* Reset all default button styles */
+    display: block;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+.footer-nav-button:hover {
+    text-decoration: underline;
+}

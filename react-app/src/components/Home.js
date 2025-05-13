@@ -10,6 +10,7 @@ import Gallery from './Gallery';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
 import ModalForm from './ModalForm';
+import YoutubeSection from './YoutubeSection'
 
 import '../styles/templatemo-style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,9 +35,12 @@ const HomePage = () => {
             <Navbar />
             <HeroSection />
             <AboutSection />
-            <Testimonials />
-            <ServicesSection />
+            <YoutubeSection/>
+            <hr/>
             <Gallery />
+            <hr/>
+            <ServicesSection />
+            <Testimonials />
             <ContactSection />
             <Footer />
             <ModalForm />

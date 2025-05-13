@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Navbar.css';
 import  EclipsePoolLogo  from "./../images/newllogo";
+import MercedesPoolLogo from "../images/mercedespoollogo.jpg"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +44,8 @@ const Navbar = () => {
                     )}
 
                     <ul className="nav navbar-nav navbar-nav-first">
-                        <EclipsePoolLogo />
+                        <img src={MercedesPoolLogo} alt="Mercedes Pools Logo" style={{ height: '40px' }} />
+
                         <li><button onClick={() => scrollToSection('home')} className="nav-btn">Home</button></li>
                         <li><button onClick={() => scrollToSection('about')} className="nav-btn">About</button></li>
                         <li><button onClick={() => scrollToSection('services')} className="nav-btn">Services</button></li>
@@ -60,13 +62,32 @@ const Navbar = () => {
                     <ul className="nav navbar-nav navbar-right">
                         <li>
                             <a
-                                href="https://www.facebook.com/p/Eclipse-Pool-Service-100063504253328/"
+                                href="https://www.facebook.com/mercedespools/"
+                                className="fa fa-facebook-square"
+                                aria-label="Facebook"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                            >
-                                <i className="fa fa-facebook-square" style={{ fontSize: '24px' }}></i>
-                            </a>
+                            ></a>
                         </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/mercedespools"
+                                className="fa fa-instagram"
+                                aria-label="Instagram"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/@mercedespool"
+                                className="fa fa-youtube-play"
+                                aria-label="YouTube"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            ></a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
