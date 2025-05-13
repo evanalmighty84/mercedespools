@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/shopmercedespools.com/static/css/main.935a26c5.css",
-    "main.js": "/shopmercedespools.com/static/js/main.e443ce6c.js",
-    "static/media/Clearly.gif": "/shopmercedespools.com/static/media/Clearly.893372afed6e88193fc3.gif",
-    "static/media/123-1_5.JPEG": "/shopmercedespools.com/static/media/123-1_5.488ff93beff2d52a98d6.JPEG",
-    "static/media/123-1_1.JPEG": "/shopmercedespools.com/static/media/123-1_1.0fb211c0fe7012daee13.JPEG",
-    "static/media/layingbythepool.jpg": "/shopmercedespools.com/static/media/layingbythepool.8fe183a6d506a96af75b.jpg",
-    "static/media/123-1_2.JPEG": "/shopmercedespools.com/static/media/123-1_2.356f2235ef404055c7f8.JPEG",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/shopmercedespools.com/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/123-1_3.JPEG": "/shopmercedespools.com/static/media/123-1_3.d83bf5cf4c8383731431.JPEG",
-    "static/media/fontawesome-webfont.eot": "/shopmercedespools.com/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/shopmercedespools.com/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/shopmercedespools.com/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/shopmercedespools.com/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/img.png": "/shopmercedespools.com/static/media/img.7fbb948976a0776011d1.png",
-    "static/media/reviewer2.png": "/shopmercedespools.com/static/media/reviewer2.0d202dd78d174bdea5b7.png",
-    "static/media/reviewer1.png": "/shopmercedespools.com/static/media/reviewer1.9374c79b18323b54954f.png",
-    "static/media/palmtrees.png": "/shopmercedespools.com/static/media/palmtrees.7d51879bef74abc89d27.png",
-    "index.html": "/shopmercedespools.com/index.html",
-    "main.935a26c5.css.map": "/shopmercedespools.com/static/css/main.935a26c5.css.map",
-    "main.e443ce6c.js.map": "/shopmercedespools.com/static/js/main.e443ce6c.js.map"
+    "main.css": "/static/css/main.c0a0eac0.css",
+    "main.js": "/static/js/main.c3704305.js",
+    "static/media/Clearly.gif": "/static/media/Clearly.893372afed6e88193fc3.gif",
+    "static/media/123-1_5.JPEG": "/static/media/123-1_5.488ff93beff2d52a98d6.JPEG",
+    "static/media/123-1_1.JPEG": "/static/media/123-1_1.0fb211c0fe7012daee13.JPEG",
+    "static/media/layingbythepool.jpg": "/static/media/layingbythepool.8fe183a6d506a96af75b.jpg",
+    "static/media/123-1_2.JPEG": "/static/media/123-1_2.356f2235ef404055c7f8.JPEG",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/123-1_3.JPEG": "/static/media/123-1_3.d83bf5cf4c8383731431.JPEG",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/img.png": "/static/media/img.7fbb948976a0776011d1.png",
+    "static/media/reviewer2.png": "/static/media/reviewer2.0d202dd78d174bdea5b7.png",
+    "static/media/reviewer1.png": "/static/media/reviewer1.9374c79b18323b54954f.png",
+    "static/media/palmtrees.png": "/static/media/palmtrees.7d51879bef74abc89d27.png",
+    "index.html": "/index.html",
+    "main.c0a0eac0.css.map": "/static/css/main.c0a0eac0.css.map",
+    "main.c3704305.js.map": "/static/js/main.c3704305.js.map"
   },
   "entrypoints": [
-    "static/css/main.935a26c5.css",
-    "static/js/main.e443ce6c.js"
+    "static/css/main.c0a0eac0.css",
+    "static/js/main.c3704305.js"
   ]
 }
