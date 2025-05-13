@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mercedespools/static/css/main.ce494f57.css",
-    "main.js": "/mercedespools/static/js/main.28235aa1.js",
+    "main.js": "/mercedespools/static/js/main.629de08a.js",
     "static/media/Clearly.gif": "/mercedespools/static/media/Clearly.893372afed6e88193fc3.gif",
     "static/media/123-1_5.JPEG": "/mercedespools/static/media/123-1_5.488ff93beff2d52a98d6.JPEG",
     "static/media/123-1_1.JPEG": "/mercedespools/static/media/123-1_1.0fb211c0fe7012daee13.JPEG",
@@ -19,10 +19,10 @@
     "static/media/palmtrees.png": "/mercedespools/static/media/palmtrees.7d51879bef74abc89d27.png",
     "index.html": "/mercedespools/index.html",
     "main.ce494f57.css.map": "/mercedespools/static/css/main.ce494f57.css.map",
-    "main.28235aa1.js.map": "/mercedespools/static/js/main.28235aa1.js.map"
+    "main.629de08a.js.map": "/mercedespools/static/js/main.629de08a.js.map"
   },
   "entrypoints": [
     "static/css/main.ce494f57.css",
-    "static/js/main.28235aa1.js"
+    "static/js/main.629de08a.js"
   ]
 }
